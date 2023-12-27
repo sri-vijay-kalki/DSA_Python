@@ -57,6 +57,12 @@ class LinkedList:
             temp_node.next = new_node
         self.length += 1
         return True
+    
+    def traverse(self):
+        current = self.head
+        while current is not None:
+            print(current.value)
+            current = current.next
 
 
 
